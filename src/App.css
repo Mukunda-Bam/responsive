@@ -1,0 +1,161 @@
+body{
+  padding:0px;
+  margin:0px;
+}
+.App{
+  text-align:center;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap; 
+  background-color:rgba(0, 0, 0, 0.2);
+  width:100%;
+  min-height:100vh;
+}
+.left{
+  background-color: none;
+  width:26%;
+  height:550px;
+  margin-left:5.5%;
+  margin-top:70px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.left-container{
+  display:flex;
+  flex-direction:column;
+}
+.left-top{
+  background-color: white;
+  width:100%;
+  height:200px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+  padding-top:0px;
+}
+.left-top-p{
+  background-color: none;
+  margin-top: 80px;
+}
+.left-bottom{
+  background-color: white;
+  width:100%;
+  height:270px;
+  margin-top:70px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.left-bottom-p{
+  background-color: none;
+  margin-top: 135px;
+}
+.middle{
+  background-color: none;
+  width:26%;
+  height:570px;
+  margin-top:70px;
+  margin-right:5.5%;
+  margin-bottom:30px;
+  margin-left:0px;
+}
+.middle-container{
+  display:flex;
+  flex-direction:column;
+}
+.middle-top{
+  background-color: white;
+  width:100%;
+  height:270px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.middle-top-p{
+  background-color: none;
+  margin-top: 135px;
+}
+.middle-bottom{
+  background-color: white;
+  width:100%;
+  height:130px;
+  margin-top:70px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.middle-bottom-p{
+  background-color: none;
+  margin-top: 55px;
+}
+.right{
+  background-color:none;
+  width:26%;
+  height:550px;
+  margin-left:0px;
+  margin-top:70px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.right-container{
+  display:flex;
+  flex-direction:column;
+}
+.right-top{
+  background-color: white;
+  width:100%;
+  height:250px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.right-top-p{
+  background-color: none;
+  margin-top: 120px;
+}
+.right-bottom{
+  background-color: white;
+  width:100%;
+  height:200px;
+  margin-top:70px;
+  margin-bottom:30px;
+  margin-right:5.5%;
+}
+.right-bottom-p{
+  background-color: none;
+  margin-top: 80px;
+}
+@media (max-width: 1000px) {
+  
+  .right-container {
+    flex-direction: row; 
+  }
+  .right-top {
+    width: 41%;
+    margin-right: 4%;
+    transform: translate(10%, 0%);
+
+  }
+  .right-bottom{
+    width: 41%;
+    margin-right: 4%;
+    transform: translate(22%, -70%);
+  }
+
+
+  .left, .middle {
+    width:37%; 
+    margin-left: 2.5%;
+    order:1;
+    transform: translate(15%, 0%);;
+  }
+
+  .right {
+    order: 3; 
+    width: 90%; 
+    margin-left: 5%
+  }
+
+  .left-bottom {
+    
+  }
+
+  .middle-bottom {
+    
+  }
+}
